@@ -22,6 +22,9 @@ $(document).on("click", ".submit-btn", function(){
   }).then(function(result) {
     for (var i = 0; i<=numberRecords; i++){
     var webUrl = result.response.docs[i].web_url;
+    var abstract = result.response.docs[i].abstract;
+    var headline = result.response.docs[i].headline.main;
+    var copyright = result.copyright;
     console.log(webUrl);
     console.log(result);
     }
