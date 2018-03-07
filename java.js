@@ -20,11 +20,11 @@ $(document).on("click", ".submit-btn", function(){
     url: queryURL,
     method: 'GET',
   }).then(function(result) {
-    for (var i = 0; i<=numberRecords; i++){}
+    for (var i = 0; i<=numberRecords; i++){
     var webUrl = result.response.docs[i].web_url;
     console.log(webUrl);
     console.log(result);
-  
+    }
     // selector(result.response.docs);
 //   });
 
